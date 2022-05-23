@@ -3,7 +3,7 @@ import { User } from '~/domain/user';
 import { supbase } from '~/libs/supabase';
 
 const getUsers = async () => {
-  const { data, error } = await supbase.from<User>('user').select('*');
+  const { data, error } = await supbase.from<User>('User').select('*');
   if (error) {
     throw error;
   }
