@@ -2,7 +2,16 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+Make a .env file and generate its types by gen-env-types
+
+```bash
+touch .env...
+vim /path/to/envfile
+
+gen-env-types /path/to/envfile -o /path/to/outputfile
+```
+
+Run the development server:
 
 ```bash
 npm run dev
